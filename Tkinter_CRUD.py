@@ -30,7 +30,7 @@ def insert_siswa():
 
 def readsiswa():
     con = koneksi()
-    cur.con.cursor()
+    cur= con.cursor()
     cur.execute("SELECT * FROM nilai_siswa ORDER BY id")
     rows = cur.fetchall()
     con.close()
